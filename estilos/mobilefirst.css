@@ -36,15 +36,16 @@ body {
 
 header {
     display: grid;
-    grid-template: 1fr auto / 1fr 2fr 1fr;
+    grid-template: 1fr auto auto/ 1fr 2fr 1fr;
     align-items: center;
+    position: relative;
 }
 
 .logo {
     font-family: var(--logo);
     color: var(--icones);
     grid-column: 2/3;
-    padding: 16px;
+    padding: 4px 16px;
 }
 .l1, .l2 {
     display: block;
@@ -58,7 +59,7 @@ header {
 }
 
 .menuhamburguer {
-    grid-column: 1/1;
+    grid-column: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,12 +117,12 @@ header {
 .menudecima {
     display: none;
     position: absolute;
-    margin-top: 100px;
-    margin-left: 3px;
+    top: 60px;
+    left: 5px;
     background-color: var(--branco);
     padding: 5px 10px;
     border-radius: 8px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .listadecima{
@@ -139,24 +140,63 @@ header {
     text-align: center;
 }
 
+/* .cabecalho div {
+    grid-area: 2 / 1 / 3 / 4;
+} */
+
 .cabecalho div {
     grid-area: 2 / 1 / 3 / 4;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecalho div img {
-    transform: translateY(-16px);
+    /* transform: translateY(-16px); */
     width: 88%;
-    display: block;
-    margin: auto;
+    /* display: block;
+    margin: auto; */
     border-radius: 8px;
     aspect-ratio: 2.4/1;
 }
 
 .botaopedido {
+
     display: block;
-    transform: translateY(-35px);
-    margin: auto;
-    width: 170px;
+    position: relative;
+    z-index: 1;
+
+    width: 60%;
+    max-width: 260px;
+
+    margin: -16px auto 0 auto;
+
+    text-decoration: none;
+    text-align: center;
+
+    padding: 5px 0px;
+    font-size: 1.15em;
+
+    background-color: var(--texto-secundario);
+    color: var(--branco);
+
+    font-weight: 700;
+    font-style: italic;
+    font-family: var(--fonte1);
+
+    border-radius: 16px;
+
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* display: block;
+    /* transform: translateY(-35px); --
+    position: relative;
+    margin-top: -10%;
+    z-index: 1;
+    /* width: 170px; --
+    width: 50%;
+    max-width: 280px;
     text-decoration: none;
     text-align: center;
     padding: 10px;
@@ -166,7 +206,7 @@ header {
     font-style: italic;
     font-family: var(--fonte1);
     font-size: 1.1em;
-    border-radius: 16px;
+    border-radius: 16px; */
 }
 /*----------------------------------*/
 
