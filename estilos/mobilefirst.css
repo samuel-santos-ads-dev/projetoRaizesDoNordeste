@@ -162,33 +162,24 @@ header {
 }
 
 .botaopedido {
-
     display: block;
     position: relative;
     z-index: 1;
-
     width: 60%;
     max-width: 260px;
-
     margin: -16px auto 0 auto;
-
     text-decoration: none;
     text-align: center;
-
     padding: 5px 0px;
     font-size: 1.15em;
-
     background-color: var(--texto-secundario);
     color: var(--branco);
-
     font-weight: 700;
     font-style: italic;
     font-family: var(--fonte1);
-
     border-radius: 16px;
-
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; */
     /* display: block;
     /* transform: translateY(-35px); --
     position: relative;
@@ -208,6 +199,43 @@ header {
     font-size: 1.1em;
     border-radius: 16px; */
 }
+
+.tresicones {
+    grid-area: 3 / 1 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.listatres {
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itens3 {
+    display: flex;
+    justify-content: center;
+    width: 27%;
+    height: 65px;
+    padding: 10px 10px;
+    font-size: 1.3em;
+    background-color: var(--branco);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.itens3 a {
+    color: var(--icones);
+    text-decoration: none;
+}
+
+.itens3 p {
+    font-size: 0.6em;
+    font-family: var(--fonte1);
+}
+
 /*----------------------------------*/
 
 /*Main*/
@@ -223,7 +251,7 @@ main {
 /*Menu Inferior*/
 .menuinferior {
     margin: auto;
-    width: 97vw;
+    width: 99vw;
     height: var(--altura-menuinferior);
     position: fixed;
     bottom: 0px;
