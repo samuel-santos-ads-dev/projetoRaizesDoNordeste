@@ -10,3 +10,11 @@ function clicado() {
         menuhamburguer.classList.add('clicou')
     }
 }
+
+let botoes = document.querySelectorAll('.adicionarcarrinho');
+
+  botoes.forEach(btn => {
+    btn.addEventListener('click', () => {
+      alert('Item adicionado ao carrinho 🛒');
+    });
+  });

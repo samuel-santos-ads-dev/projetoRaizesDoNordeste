@@ -224,6 +224,7 @@ header {
     background-color: var(--branco);
     text-align: center;
     border-radius: 10px;
+    border: 1px solid var(--icones);
 }
 
 .itens3 a {
@@ -240,16 +241,84 @@ header {
 
 /*Main*/
 main {
-    width: 85vw;
+    width: 90vw;
     margin: auto;
     min-height: 100vh;
     padding-bottom: var(--altura-menuinferior);
     text-align: justify;
+    
+}
+
+.titulomain {
+    color: var(--icones);
+    font-family: var(--fonte2);
+    padding: 5px;
+}
+.promocoes {
+    width: 100%;
+}
+.promocoes .grid{
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.promocoes .grid .card {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--branco);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.promocoes .card img{
+    max-width: 120px;
+    border-radius: 20px;
+}
+
+.promocoes .grid .card h3 {
+    color: var(--texto-principal);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.promocoes .grid .card p{
+    font-size: 0.8em;
+    color: var(--texto-secundario);
+    align-self: flex-start;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.card .adicionarcarrinho {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--texto-secundario);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.adicionarcarrinho:active {
+  transform: scale(1.2);
 }
 /*----------------------------------*/
 
 /*Menu Inferior*/
 .menuinferior {
+    display: block;
     margin: auto;
     width: 99vw;
     height: var(--altura-menuinferior);
@@ -258,7 +327,7 @@ main {
     background-color: var(--fundo-areia);
     padding: 12px  0px;
     border-radius: 12px 12px 0px 0px;
-    border-top: 1px solid var(--texto-azul);
+    border-top: 1px solid var(--texto-secundario);
 }
 .listainferior {
     display: flex;
