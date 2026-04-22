@@ -200,6 +200,10 @@ header {
     border-radius: 16px; */
 }
 
+.botaopedido:active {
+    transform: scale(0.96);
+}
+
 .tresicones {
     grid-area: 3 / 1 / 4 / 4;
     display: flex;
@@ -254,18 +258,18 @@ main {
     font-family: var(--fonte2);
     padding: 5px;
 }
-.promocoes {
+.sessoes {
     width: 100%;
 }
-.promocoes .grid{
+.sessoes .grid{
     width: 100%;
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 10px;
 }
 
-.promocoes .grid .card {
+.sessoes .grid .card {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -276,18 +280,18 @@ main {
     gap: 8px;
 }
 
-.promocoes .card img{
+.sessoes .card img{
     max-width: 120px;
     border-radius: 20px;
 }
 
-.promocoes .grid .card h3 {
+.sessoes .grid .card h3 {
     color: var(--texto-principal);
     font-size: 0.9em;
     text-align: center;
 }
 
-.promocoes .grid .card p{
+.sessoes .grid .card p{
     font-size: 0.8em;
     color: var(--texto-secundario);
     align-self: flex-start;
@@ -313,6 +317,105 @@ main {
 
 .adicionarcarrinho:active {
   transform: scale(1.2);
+}
+
+.botaocardapioconteiner {
+    display: block;
+    width: 80%;
+    max-width: 230px;
+    margin: 15px auto 25px auto;
+    padding: 8px 0;
+    text-align: center;
+    background-color: var(--texto-secundario);
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.botaocardapioconteiner a {
+    text-decoration: none;
+    font-family: var(--fonte1);
+    font-weight: bold;
+    font-size: 0.95em;
+    color: var(--branco);
+}
+
+.botaocardapioconteiner:active {
+    transform: scale(0.96);
+}
+
+/* .fidelidade .card-fidelidade {
+    background-color: var(--branco);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card-fidelidade p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: var(--texto-principal);
+}
+
+.card-fidelidade a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--texto-secundario);
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-family: var(--fonte1);
+    font-size: 0.9em;
+    transition: 0.2s;
+}
+
+.card-fidelidade a:active {
+    transform: scale(0.95);
+} */
+
+.fidelidade .cartaofidelidade {
+    background: linear-gradient(135deg, var(--texto-secundario), var(--texto-amarelo));
+    padding: 18px;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--branco);
+}
+
+.cartaofidelidade p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: var(--branco);
+}
+
+.cartaofidelidade a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--texto-secundario);
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-family: var(--fonte1);
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.cartaofidelidade a:active {
+    transform: scale(0.95);
+}
+
+.termos {
+    font-size: 0.9em;
+    text-align: center;
+    color: var(--texto-principal);
+    margin: 20px 0 10px 0;
+}
+
+.termos a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-weight: bold;
 }
 /*----------------------------------*/
 
