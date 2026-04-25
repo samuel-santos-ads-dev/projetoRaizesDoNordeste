@@ -278,6 +278,7 @@ main {
     justify-content: space-between;
     border-radius: 10px;
     gap: 8px;
+    padding: 8px;
 }
 
 .sessoes .card img{
@@ -450,7 +451,143 @@ main {
     text-decoration: none;
 }
 
-.iteminferior #empaginainicial {
+.iteminferior #empagina {
     color: var(--texto-secundario);
 }
+
+.iconecarrinho {
+    position: relative;
+}
+
+#contadorcarrinho {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    color: var(--texto-secundario);
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
 /*----------------------------------*/
+
+/*-----------------------------------------*/
+/*Cardapio*/
+.gridcardapio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.topocard {
+    display: flex;
+    gap: 10px;
+}
+
+.itenscardapio {
+    background-color: var(--branco);
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.itenscardapio:active {
+    transform: scale(0.98);
+}
+
+.itenscardapio img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.itenscardapio h3 {
+    font-size: 1em;
+    color: var(--texto-principal);
+}
+
+.descricaocardapio {
+    font-size: 0.95em;
+    color: var(--texto-principal);
+    margin-top: 10px;
+}
+
+.preco {
+    font-weight: bold;
+    color: var(--texto-secundario);
+    font-size: 0.95em;
+}
+
+.itenscardapio .adicionarcarrinho {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--texto-secundario);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.adicionarcarrinho:active {
+  transform: scale(1.2);
+}
+
+details {
+    margin-top: auto;
+}
+
+details[open] {
+    animation: abrirDetalhe 400ms ease-in;
+}
+
+@keyframes abrirDetalhe {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+summary {
+    font-size: 0.85em;
+    font-family: var(--fonte1);
+    color: var(--texto-secundario);
+    cursor: pointer;
+}
+
+.descricaodetalhe {
+    font-size: 0.85em;
+    color: var(--fundo-cinza);
+    margin-top: 6px;
+}
+
+.tempo {
+    font-size: 0.75em;
+    color: var(--icones);
+    margin-top: 4px;
+}
+
+.avaliacao {
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.avaliacao span {
+    color: var(--texto-azul);
+    font-size: 0.85em;
+}
+
+/*-----------------------------------------*/

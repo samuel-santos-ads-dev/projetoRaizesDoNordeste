@@ -38,7 +38,7 @@
                     <a href="paginas/pedidos.html">Pedidos</a>
                 </li>
                 <li class="itemdecima">
-                    <a href="paginas/fidelidade">Fidelidade</a>
+                    <a href="paginas/fidelidade.html">Fidelidade</a>
                 </li>
                 <li class="itemdecima">
                     <a href="paginas/conta.html">Conta</a>
@@ -115,9 +115,9 @@
             <h2 class="titulomain" id="cardapio">Cardápio</h2>
             <section class="grid">
                 <article class="card">
-                    <img src="midias/acarajerecheado.png" alt="Acaraje recheado">
+                    <img src="midias/acarajerecheado.png" alt="Acarajé recheado">
                     <h3>Acaraje recheado</h3>
-                    <p>R$8,50</p>
+                    <p>R$12,00</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
@@ -171,6 +171,7 @@
 
             <div class="cartaofidelidade">
                 <p>Acumule pontos a cada pedido e troque por descontos!</p>
+                <p>A cada R$1,00 gasto você ganha 10 pontos</p>
                 <p>📍 Retire no local - rápido e prático</p>
                 <a href="paginas/fidelidade.html">Ver recompensas</a>
             </div>
@@ -183,6 +184,7 @@
                 <a href="paginas/termos.html">Termos de Uso</a> e 
                 <a href="paginas/privacidade.html">Política de Privacidade</a>.
             </p>
+            <p>&copy;<span id="ano"></span> Raízes do Nordeste LTDA</p>
         </section>
         <!--Fim sessao termos-->
     </main>
@@ -192,14 +194,17 @@
     <nav class="menuinferior" aria-label="menu inferior">
         <ul class="listainferior">
             <li class="iteminferior">
-                <a href="" id="empaginainicial">
+                <a href="index.html" id="empaginainicial">
                     <i class="fa-solid fa-house"></i>
                     <p>Ínicio</p>
                 </a>
             </li>
             <li class="iteminferior">
                 <a href="paginas/carrinho.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="iconecarrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="contadorcarrinho">0</span>
+                    </div>
                     <p>Carrinho</p>
                 </a>
             </li>

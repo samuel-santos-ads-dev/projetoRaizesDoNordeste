@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes do Nordeste - Cardápio</title>
+    <link rel="stylesheet" href="../estilos/mobilefirst.css">
+    <link rel="shortcut icon" href="../midias/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d9f9931f52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <button class="menuhamburguer" aria-label="abre e fecha o menu de opções" onclick="clicado()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1 class="logo"><span class="l1">Raízes do</span> <span class="l2">Nordeste</span></h1>
+
+        <a href="login.html" id="iconelogin">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </a>
+
+        <nav class="menudecima" aria-label="menu principal">
+            <ul class="listadecima">
+                <li class="itemdecima">
+                    <a href="../index.html">Ínicio</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="carrinho.html">Carrinho</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="pedidos.html">Pedidos</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="fidelidade.html">Fidelidade</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="conta.html">Conta</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do cabecalho-->
+
+    <!--Inicio do conteudo principal-->
+    <main>
+        <section class="cardapio">
+            <h2 class="titulomain">Cardápio</h2>
+            <section class="gridcardapio">
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/acarajerecheado.png" alt="Acaraje recheado">
+                        <p class="descricaocardapio">
+                            Bolinho de feijão-fradinho frito no dendê, recheado com vatapá e camarão.
+                        </p>
+                    </div>
+                    <h3>Acarajé recheado</h3>
+                    <p class="preco">R$ 12,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Receita tradicional baiana, levemente apimentada. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 20-30 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐☆ <span>(4,9)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/amendoinfrito.png" alt="Amendoin frito">
+                        <p class="descricaocardapio">
+                            Amendoim torrado e crocante, perfeito para petiscar.
+                        </p>
+                    </div>
+                    <h3>Amendoin frito</h3>
+                    <p class="preco">R$ 8,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Frito na medida certa, com textura crocante e sabor marcante. Ideal como acompanhamento ou lanche rápido. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-10 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/bolodemilho.png" alt="Bolo de milho">
+                        <p class="descricaocardapio">
+                            Bolo de milho fofinho e levemente adocicado, com sabor caseiro.
+                        </p>
+                    </div>
+                    <h3>Bolo de milho</h3>
+                    <p class="preco">R$ 8,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Bolo de milho caseiro, fofinho e úmido, assado na hora até formar uma casquinha dourada. Sabor intenso de milho com aquele gostinho tradicional de interior. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 15-25 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/coxinha.png" alt="Coxinha">
+                        <p class="descricaocardapio">
+                            Coxinha dourada e crocante, com recheio cremoso e saboroso.
+                        </p>
+                    </div>
+                    <h3>Coxinha</h3>
+                    <p class="preco">R$ 7,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Massa macia por dentro e crocante por fora, recheada com frango desfiado bem temperado. Frita na hora para garantir sabor e textura irresistíveis. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/coxinhadefeijao.png" alt="Coxinha de feijao">
+                        <p class="descricaocardapio">
+                            Coxinha crocante feita com massa de feijão, sabor marcante e bem temperado.
+                        </p>
+                    </div>
+                    <h3>Coxinha de feijão</h3>
+                    <p class="preco">R$ 7,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Massa macia preparada com feijão, recheada e frita até ficar dourada e crocante. Uma opção criativa e cheia de sabor da culinária nordestina. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐☆ <span>(4,9)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/coxinhademacaxeira.png" alt="Coxinha de macaxeira">
+                        <p class="descricaocardapio">
+                            Coxinha crocante com massa de macaxeira e recheio bem temperado.
+                        </p>
+                    </div>
+                    <h3>Coxinha de macaxeira</h3>
+                    <p class="preco">R$ 7,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Massa feita com macaxeira, macia e saborosa por dentro, com casquinha crocante por fora. Recheada com carne ou frango bem temperado, trazendo um toque regional irresistível. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/cuscuzcommanteiga.png" alt="Cuscuz com manteiga">
+                        <p class="descricaocardapio">
+                            Cuscuz nordestino quentinho com manteiga derretida.
+                        </p>
+                    </div>
+                    <h3>Cuscuz com manteiga</h3>
+                    <p class="preco">R$ 8,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparado no vapor, leve e macio, servido ainda quente com manteiga derretendo por cima. Simples, tradicional e cheio de sabor. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 10-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/enroladinhodesalcicha.png" alt="Enroladinho de salcicha">
+                        <p class="descricaocardapio">
+                            Massa fofinha recheada com salsicha, perfeita para um lanche rápido.
+                        </p>
+                    </div>
+                    <h3>Enroladinho de salcicha</h3>
+                    <p class="preco">R$ 7,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Massa leve e macia envolvendo salsicha suculenta, assado ou frito até ficar dourado por fora. Simples, saboroso e sempre uma boa escolha. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 15-25 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐☆ <span>(4,9)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/espetinho.png" alt="Espetinho">
+                        <p class="descricaocardapio">
+                            Espetinho grelhado na hora, suculento e bem temperado.
+                        </p>
+                    </div>
+                    <h3>Espetinho</h3>
+                    <p class="preco">R$ 7,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparado na brasa, com carne macia e suculenta, levemente dourada por fora e cheia de sabor por dentro. Acompanha aquele cheirinho irresistível de churrasco. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 10-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/macaxeiracomcarnedesol.png" alt="Macaxeira com carne de sol">
+                        <p class="descricaocardapio">
+                            Macaxeira macia com carne de sol suculenta e bem temperada.
+                        </p>
+                    </div>
+                    <h3>Macaxeira com carne de sol</h3>
+                    <p class="preco">R$ 14,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Macaxeira cozida no ponto certo, macia por dentro, acompanhada de carne de sol dourada e cheia de sabor. Um clássico nordestino que combina tradição e sustância. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 10-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/minihamburguer.png" alt="Mini hamburguer">
+                        <p class="descricaocardapio">
+                            Mini hambúrguer suculento, ideal para um lanche rápido e saboroso.
+                        </p>
+                    </div>
+                    <h3>Mini hamburguer</h3>
+                    <p class="preco">R$ 6,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Pão macio com hambúrguer suculento, preparado na chapa e servido quentinho. Pequeno no tamanho, grande no sabor. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/mugunza.png" alt="Mungunza">
+                        <p class="descricaocardapio">
+                            Doce tradicional nordestino feito com milho, leite e coco.
+                        </p>
+                    </div>
+                    <h3>Mungunzá</h3>
+                    <p class="preco">R$ 5,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Cremoso e quentinho, preparado com milho cozido, leite e coco, trazendo um sabor marcante e acolhedor típico das receitas nordestinas. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/pamonha.png" alt="Pamonha">
+                        <p class="descricaocardapio">
+                            Pamonha de milho cremosa, com sabor doce e tradicional.
+                        </p>
+                    </div>
+                    <h3>Pamonha</h3>
+                    <p class="preco">R$ 6,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feita com milho fresco e preparada na palha, com textura macia e cremosa. Um clássico nordestino cheio de sabor e tradição. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 15-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/paodequeijo.png" alt="Pao de queijo">
+                        <p class="descricaocardapio">
+                            Pão de queijo quentinho, macio por dentro e levemente crocante por fora.
+                        </p>
+                    </div>
+                    <h3>Pão de queijo</h3>
+                    <p class="preco">R$ 4,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com queijo e assado até ficar dourado, com casquinha levemente crocante e interior macio e puxento. Simples, tradicional e irresistível. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/pasteldevento.png" alt="Pastel de vento">
+                        <p class="descricaocardapio">
+                            Pastel leve e crocante, com massa sequinha e dourada.
+                        </p>
+                    </div>
+                    <h3>Pastel de vento</h3>
+                    <p class="preco">R$ 4,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Massa fina e bem frita, formando um pastel leve e crocante por fora. Simples, sequinho e perfeito para petiscar a qualquer hora. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/queijonabrasa.png" alt="Queijo na brasa">
+                        <p class="descricaocardapio">
+                            Queijo coalho assado na brasa, dourado por fora e macio por dentro.
+                        </p>
+                    </div>
+                    <h3>Queijo na brasa</h3>
+                    <p class="preco">R$ 5,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparado na brasa até formar uma casquinha dourada e levemente crocante, mantendo o interior macio e suculento. Clássico nordestino com sabor marcante de churrasco. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 10-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/tapioca.png" alt="Tapioca com carne">
+                        <p class="descricaocardapio">
+                            Tapioca macia recheada com carne temperada e suculenta.
+                        </p>
+                    </div>
+                    <h3>Tapioca com carne</h3>
+                    <p class="preco">R$ 8,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparada na hora com goma fresca, recheada com carne bem temperada e suculenta. Leve, saborosa e perfeita para qualquer momento do dia. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 15-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/tapiocacomcarnedesol.png" alt="Tapioca com carne de sol">
+                        <p class="descricaocardapio">
+                            Tapioca macia recheada com carne de sol suculenta e bem temperada.
+                        </p>
+                    </div>
+                    <h3>Tapioca com carne de sol</h3>
+                    <p class="preco">R$ 10,00</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparada na hora com goma fresca, recheada com carne de sol macia, levemente dourada e cheia de sabor. Um clássico nordestino leve e irresistível. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 15-20 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/toscananabrasa.png" alt="Toscana na brasa">
+                        <p class="descricaocardapio">
+                            Linguiça toscana assada na brasa, suculenta e bem temperada.
+                        </p>
+                    </div>
+                    <h3>Toscana na brasa</h3>
+                    <p class="preco">R$ 8,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparada na brasa até ficar dourada por fora e suculenta por dentro, com sabor marcante e aroma irresistível de churrasco. Serve 2 pessoas.</p>
+                        <p class="tempo">⏱ 15-25 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucoacai.png" alt="Açai">
+                        <p class="descricaocardapio">
+                            Açaí gelado e cremoso, perfeito para se refrescar.
+                        </p>
+                    </div>
+                    <h3>Açaí</h3>
+                    <p class="preco">R$ 4,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Polpa de açaí bem cremosa, servida gelada, com sabor marcante e refrescante. Ideal para recarregar as energias a qualquer hora. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodeabacaxi.png" alt="Suco de abacaxi">
+                        <p class="descricaocardapio">
+                            Suco natural de abacaxi, refrescante e levemente ácido.
+                        </p>
+                    </div>
+                    <h3>Suco de abacaxi</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparado com abacaxi fresco, trazendo sabor equilibrado entre doce e ácido. Leve, gelado e perfeito para se refrescar a qualquer momento. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodeacerola.png" alt="Suco de acerola">
+                        <p class="descricaocardapio">
+                            Suco natural de acerola, refrescante e rico em vitamina C.
+                        </p>
+                    </div>
+                    <h3>Suco de acerola</h3>
+                    <p class="preco">R$ 4,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com acerolas frescas, trazendo um sabor levemente ácido e muito refrescante. Ideal para quem busca leveza e energia no dia a dia. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodecaju.png" alt="Suco de caju">
+                        <p class="descricaocardapio">
+                            Suco natural de caju, doce e refrescante.
+                        </p>
+                    </div>
+                    <h3>Suco de cajú</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com caju fresco, trazendo sabor suave e levemente adocicado. Refrescante e típico do Nordeste, perfeito para qualquer momento. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodecoco.png" alt="Suco de coco">
+                        <p class="descricaocardapio">
+                            Suco de coco natural, leve e super refrescante.
+                        </p>
+                    </div>
+                    <h3>Suco de coco</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com água de coco, leve e hidratante, com sabor suave e refrescante. Perfeito para se refrescar e matar a sede em dias quentes. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodegoiaba.png" alt="Suco de goiaba">
+                        <p class="descricaocardapio">
+                            Suco natural de goiaba, doce e refrescante.
+                        </p>
+                    </div>
+                    <h3>Suco de goiaba</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com goiabas frescas, trazendo sabor marcante e textura levemente encorpada. Refrescante e perfeito para qualquer momento do dia. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodegraviola.png" alt="Suco de graviola">
+                        <p class="descricaocardapio">
+                            Suco de graviola cremoso, com sabor suave e refrescante.
+                        </p>
+                    </div>
+                    <h3>Suco de graviola</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com graviola fresca, trazendo textura cremosa e sabor equilibrado entre doce e levemente ácido. Refrescante e cheio de personalidade. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodelaranja.png" alt="Suco de laranja">
+                        <p class="descricaocardapio">
+                            Suco natural de laranja, fresco e refrescante.
+                        </p>
+                    </div>
+                    <h3>Suco de laranja</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com laranjas frescas, espremido na hora para garantir sabor cítrico e refrescante. Perfeito para acompanhar qualquer refeição. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodelimao.png" alt="Limonada">
+                        <p class="descricaocardapio">
+                            Limonada natural, refrescante e levemente cítrica.
+                        </p>
+                    </div>
+                    <h3>Limonada</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Preparada com limões frescos, trazendo sabor equilibrado entre acidez e frescor. Servida bem gelada, perfeita para dias quentes. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodemaracuja.png" alt="Suco de maracuja">
+                        <p class="descricaocardapio">
+                            Suco de maracujá natural, refrescante e levemente ácido.
+                        </p>
+                    </div>
+                    <h3>Suco de maracujá</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com maracujá fresco, trazendo sabor intenso e equilibrado entre doce e ácido. Servido bem gelado, perfeito para relaxar e se refrescar. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+
+                <article class="itenscardapio">
+                    <div class="topocard">
+                        <img src="../midias/sucodepitaya.png" alt="Suco de pitaya">
+                        <p class="descricaocardapio">
+                            Suco de pitaya leve, refrescante e de sabor suave.
+                        </p>
+                    </div>
+                    <h3>Suco de pitaya</h3>
+                    <p class="preco">R$ 6,50</p>
+                    <button class="adicionarcarrinho">+</button>
+                    <details>
+                        <summary>Mais detalhes</summary>
+                        <p class="descricaodetalhe">Feito com pitaya fresca, trazendo sabor delicado e textura leve. Refrescante e perfeito para quem busca algo diferente e tropical. Serve 1 pessoa.</p>
+                        <p class="tempo">⏱ 5-15 min</p>
+                        <p class="avaliacao">⭐⭐⭐⭐⭐ <span>(5,0)</span></p>
+                    </details>
+                </article>
+            </section>
+        </section>
+
+        <!--Inicio sessao termos-->
+        <section class="sessoes termos">
+            <p>
+                Ao utilizar este site, você concorda com nossos 
+                <a href="termos.html">Termos de Uso</a> e 
+                <a href="privacidade.html">Política de Privacidade</a>.
+            </p>
+            <p>&copy;<span id="ano"></span> Raízes do Nordeste LTDA</p>
+        </section>
+        <!--Fim sessao termos-->
+    </main>
+    <!--Fim do conteudo principal-->
+
+    <!--Inicio do menu inferior-->
+    <nav class="menuinferior" aria-label="menu inferior">
+        <ul class="listainferior">
+            <li class="iteminferior">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Ínicio</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="carrinho.html">
+                    <div class="iconecarrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="contadorcarrinho">0</span>
+                    </div>
+                    <p>Carrinho</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="pedidos.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <p>Pedidos</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="conta.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Conta</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fim do menu inferior-->
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
