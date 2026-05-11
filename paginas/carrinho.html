@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadados SEO e compartilhamento -->
+    <meta name="description" content="Raízes do Nordeste - Rede de lanchonetes com autêntica comida nordestina. Faça seu pedido, acumule pontos e aproveite descontos.">
+    <meta name="keywords" content="comida nordestina, tapioca, acarajé, cuscuz, pedido online, fidelidade, lanchonete">
+    <meta name="author" content="Samuel Santos - Projeto Front-End UNINTER">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, WhatsApp, Telegram, LinkedIn) -->
+    <meta property="og:title" content="Raízes do Nordeste - Comida Nordestina">
+    <meta property="og:description" content="Cardápio digital, pedidos online e programa de fidelidade. O sabor do Nordeste ao seu alcance.">
+    <meta property="og:image" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste/midias/mobilePratoInicial.jpg">
+    <meta property="og:url" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste">
+    <meta property="og:type" content="website">
+    <title>Raízes do Nordeste - Carrinho</title>
+    <link rel="stylesheet" href="../estilos/mobilefirst.css">
+    <link rel="stylesheet" href="../estilos/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../estilos/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="shortcut icon" href="../midias/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d9f9931f52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <button class="menuhamburguer" aria-label="abre e fecha o menu de opções" onclick="clicado()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1 class="logo"><span class="l1">Raízes do</span> <span class="l2">Nordeste</span></h1>
+
+        <a href="login.html" id="iconelogin">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </a>
+
+        <nav class="menudecima" aria-label="menu principal">
+            <ul class="listadecima">
+                <li class="itemdecima">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="carrinho.html">Carrinho</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="pedidos.html">Pedidos</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="fidelidade.html">Fidelidade</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="conta.html">Conta</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do cabecalho-->
+
+    <!--Inicio do conteudo principal-->
+    <main>
+        <!--Inicio sessao carrinho-->
+        <section class="sessoes carrinho">
+            <h2 class="titulomain">Seu Carrinho</h2>
+
+            <div class="escolherunidade">
+                <label for="unidaderetirada">📍 Unidade para retirada:</label>
+                <select id="unidaderetirada" required>
+                    <option value="">Selecione uma unidade</option>
+                    <option value="São Luís - Centro">São Luís - Rua do Sol, 123, Centro - 65000-000</option>
+                    <option value="São José de Ribamar">São José de Ribamar - Av. dos Milagres, 456, Centro - 65110-000</option>
+                    <option value="Raposa">Raposa - Rua dos Pescadores, 789, Beira Mar - 65120-000</option>
+                    <option value="Paço do Lumiar">Paço do Lumiar - Rua Principal, 101, Pindoba - 65130-000</option>
+                    <option value="Barreirinhas">Barreirinhas - Av. dos Lençóis, 202, Centro - 65590-000</option>
+                    <option value="Fortaleza">Fortaleza - Av. Beira Mar, 1000, Meireles - 60000-000</option>
+                    <option value="Recife">Recife - Rua da Aurora, 750, Boa Vista - 50000-000</option>
+                    <option value="Salvador">Salvador - Largo do Pelourinho, 12, Pelourinho - 40000-000</option>
+                    <option value="Natal">Natal - Via Costeira, 3000, Ponta Negra - 59000-000</option>
+                    <option value="João Pessoa">João Pessoa - Av. Cabo Branco, 1500, Cabo Branco - 58000-000</option>
+                </select>
+            </div>
+
+            <ul id="listacarrinho"></ul>
+
+            <div class="resumocarrinho">
+                <p>Total: <span id="total">R$ 0,00</span></p>
+                <p>Pontos: <span id="pontos">0 pontos</span></p>
+            </div>
+            <button id="finalizar" class="botaopedido">Finalizar Pedido</button>
+        </section>
+        <!--Fim sessao carrinho-->
+        <!--Inicio sessao termos-->
+        <section class="sessoes termos">
+            <p>
+                Ao utilizar este site, você concorda com nossos 
+                <a href="termos.html">Termos de Uso</a> e 
+                <a href="privacidade.html">Política de Privacidade</a>.
+            </p>
+            <p>&copy;<span id="ano"></span> Raízes do Nordeste LTDA</p>
+        </section>
+        <!--Fim sessao termos-->
+    </main>
+    <!--Fim do conteudo principal-->
+
+    <!--Inicio do menu inferior-->
+    <nav class="menuinferior" aria-label="menu inferior">
+        <ul class="listainferior">
+            <li class="iteminferior">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Inicio</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="carrinho.html" id="empagina">
+                    <div class="iconecarrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="contadorcarrinho">0</span>
+                    </div>
+                    <p>Carrinho</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="pedidos.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <p>Pedidos</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="conta.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Conta</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fim do menu inferior-->
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadados SEO e compartilhamento -->
+    <meta name="description" content="Raízes do Nordeste - Rede de lanchonetes com autêntica comida nordestina. Faça seu pedido, acumule pontos e aproveite descontos.">
+    <meta name="keywords" content="comida nordestina, tapioca, acarajé, cuscuz, pedido online, fidelidade, lanchonete">
+    <meta name="author" content="Samuel Santos - Projeto Front-End UNINTER">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, WhatsApp, Telegram, LinkedIn) -->
+    <meta property="og:title" content="Raízes do Nordeste - Comida Nordestina">
+    <meta property="og:description" content="Cardápio digital, pedidos online e programa de fidelidade. O sabor do Nordeste ao seu alcance.">
+    <meta property="og:image" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste/midias/mobilePratoInicial.jpg">
+    <meta property="og:url" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste">
+    <meta property="og:type" content="website">
+    <title>Política de Privacidade - Raízes do Nordeste</title>
+    <link rel="stylesheet" href="../estilos/mobilefirst.css">
+    <link rel="stylesheet" href="../estilos/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../estilos/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="shortcut icon" href="../midias/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d9f9931f52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <button class="menuhamburguer" aria-label="Abrir menu de opções" onclick="clicado()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1 class="logo"><span class="l1">Raízes do</span> <span class="l2">Nordeste</span></h1>
+        <a href="conta.html" id="iconelogin">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+        <nav class="menudecima" aria-label="menu principal">
+            <ul class="listadecima">
+                <li class="itemdecima">
+                    <a href="../index.html">Início</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="carrinho.html">Carrinho</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="pedidos.html">Pedidos</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="fidelidade.html">Fidelidade</a>
+                </li>
+                <li class="itemdecima">
+                    <a href="conta.html">Conta</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do cabecalho-->
+
+    <!--Inicio do conteudo principal-->
+    <main>
+        <section class="sessoes">
+            <h2 class="titulomain">Política de Privacidade</h2>
+            <div style="background: var(--branco); padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+                <p><strong>1. Compromisso com a LGPD</strong><br>
+                A <strong>Raízes do Nordeste</strong> (projeto acadêmico fictício) está comprometida com a proteção de dados pessoais, seguindo os princípios da <strong>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018)</strong>. Tratamos os dados de forma transparente, segura e apenas para as finalidades descritas nesta política.</p>
+
+                <p><strong>2. Dados Coletados e Finalidade</strong><br>
+                Coletamos apenas as informações estritamente necessárias para operar o site: <strong>nome de usuário, senha (armazenada localmente), registros de pedidos e pontos de fidelidade</strong>. Tais dados são utilizados para:
+                <br>- Personalizar a experiência do usuário;
+                <br>- Manter o carrinho de compras e histórico de pedidos;
+                <br>- Gerenciar o programa de fidelidade.
+                <br>Não coletamos dados sensíveis, financeiros ou de localização real.</p>
+
+                <p><strong>3. Base Legal para o Tratamento</strong><br>
+                O tratamento dos dados é fundamentado no <strong>consentimento explícito do titular</strong> (art. 7º, I da LGPD), obtido no momento do cadastro/login, e na <strong>execução de contrato</strong> (art. 7º, V) para viabilizar os pedidos e o programa de pontos.</p>
+
+                <p><strong>4. Armazenamento Local e Segurança</strong><br>
+                Todas as informações são armazenadas exclusivamente no navegador do usuário, por meio de <code>localStorage</code> e <code>sessionStorage</code>. Não há transmissão de dados para servidores externos. Em um ambiente real, seriam aplicadas medidas adicionais como criptografia de senhas (hash) e comunicação via HTTPS. Neste protótipo didático, as senhas aparecem em texto puro, e o usuário é alertado sobre essa limitação.</p>
+
+                <p><strong>5. Direitos do Titular (LGPD)</strong><br>
+                Você, como titular dos dados, possui os seguintes direitos, que podem ser exercidos a qualquer momento:
+                <br>- <strong>Confirmação da existência de tratamento</strong> (art. 18, I);
+                <br>- <strong>Acesso aos dados</strong> (art. 18, II);
+                <br>- <strong>Correção de dados incompletos, inexatos ou desatualizados</strong> (art. 18, III);
+                <br>- <strong>Anonimização, bloqueio ou eliminação de dados desnecessários</strong> (art. 18, IV);
+                <br>- <strong>Eliminação dos dados tratados com consentimento</strong> (art. 18, VI) – para isso, basta excluir sua conta;
+                <br>- <strong>Revogação do consentimento</strong> (art. 18, §5º), que pode ser feita a qualquer momento, sem afetar a licitude do tratamento anterior.</p>
+
+                <p><strong>6. Compartilhamento de Dados</strong><br>
+                Não compartilhamos dados pessoais com terceiros. Este site é um projeto acadêmico sem fins comerciais.</p>
+
+                <p><strong>7. Cookies e Tecnologias de Rastreamento</strong><br>
+                Utilizamos apenas o armazenamento local do navegador. Não empregamos cookies de rastreamento, analytics ou publicidade.</p>
+
+                <p><strong>8. Encarregado de Dados (DPO Fictício)</strong><br>
+                Para fins didáticos, o encarregado pelo tratamento de dados pessoais é o aluno responsável pelo projeto, que pode ser contatado via e-mail institucional <code>dpo@raizesdonordeste.com</code>.</p>
+
+                <p><strong>9. Atualizações desta Política</strong><br>
+                Esta política poderá ser atualizada para refletir eventuais mudanças nas funcionalidades do site ou na legislação. Recomendamos a revisão periódica.</p>
+            </div>
+        </section>
+
+        <!--Inicio sessao termos-->
+        <section class="sessoes termos">
+            <p>Ao utilizar este site, você concorda com nossos <a href="termos.html">Termos de Uso</a> e <a href="privacidade.html">Política de Privacidade</a>.</p>
+            <p>&copy;<span id="ano"></span> Raízes do Nordeste LTDA</p>
+        </section>
+        <!--Fim sessao termos-->
+    </main>
+    <!--Fim do conteudo principal-->
+
+    <!--Inicio do menu inferior-->
+    <nav class="menuinferior" aria-label="menu inferior">
+        <ul class="listainferior">
+            <li class="iteminferior">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Início</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="carrinho.html">
+                    <div class="iconecarrinho">
+                        <i class="fa-solid fa-cart-shopping"></i><span id="contadorcarrinho">0</span>
+                    </div>
+                    <p>Carrinho</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="pedidos.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <p>Pedidos</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="conta.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Conta</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fim do menu inferior-->
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

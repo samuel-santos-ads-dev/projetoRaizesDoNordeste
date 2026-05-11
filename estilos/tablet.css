@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.sessoes .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.sessoes .tabletpromocoesinicio {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sessoes .card img {
+    max-width: 150px;
+}
+
+.itens3 {
+    width: 20%;
+    font-size: 1.5em;
+    padding: 15px 10px;
+}
+
+.botaopedido {
+    width: 50%;
+    max-width: 320px;
+    font-size: 1.3em;
+    padding: 8px 0px;
+}
+
+.cabecalho div img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.tresicones .listatres {
+    width: 70%;
+}
+
+.gridcardapio {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.adicionarcarrinho {
+    width: 24px;
+    height: 24px;
+    font-size: 1.1em;
+}

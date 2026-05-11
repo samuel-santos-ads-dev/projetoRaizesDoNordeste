@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadados SEO e compartilhamento -->
+    <meta name="description" content="Raízes do Nordeste - Rede de lanchonetes com autêntica comida nordestina. Faça seu pedido, acumule pontos e aproveite descontos.">
+    <meta name="keywords" content="comida nordestina, tapioca, acarajé, cuscuz, pedido online, fidelidade, lanchonete">
+    <meta name="author" content="Samuel Santos - Projeto Front-End UNINTER">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, WhatsApp, Telegram, LinkedIn) -->
+    <meta property="og:title" content="Raízes do Nordeste - Comida Nordestina">
+    <meta property="og:description" content="Cardápio digital, pedidos online e programa de fidelidade. O sabor do Nordeste ao seu alcance.">
+    <meta property="og:image" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste/midias/mobilePratoInicial.jpg">
+    <meta property="og:url" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste">
+    <meta property="og:type" content="website">
+    <title>Raízes do Nordeste - Entrar</title>
+    <link rel="stylesheet" href="../estilos/mobilefirst.css">
+    <link rel="stylesheet" href="../estilos/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../estilos/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="shortcut icon" href="../midias/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d9f9931f52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <button class="menuhamburguer" aria-label="abre e fecha o menu de opções" onclick="clicado()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1 class="logo"><span class="l1">Raízes do</span> <span class="l2">Nordeste</span></h1>
+
+        <a href="login.html" id="iconelogin">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </a>
+
+        <nav class="menudecima" aria-label="menu principal">
+            <ul class="listadecima">
+                <li class="itemdecima"><a href="../index.html">Início</a></li>
+                <li class="itemdecima"><a href="cardapio.html">Cardápio</a></li>
+                <li class="itemdecima"><a href="carrinho.html">Carrinho</a></li>
+                <li class="itemdecima"><a href="pedidos.html">Pedidos</a></li>
+                <li class="itemdecima"><a href="fidelidade.html">Fidelidade</a></li>
+                <li class="itemdecima"><a href="conta.html">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do cabecalho-->
+
+    <!--Inicio do conteudo principal-->
+    <main>
+        <div class="caixalogin">
+            <div class="abas">
+                <button id="abaentrar" class="active">Entrar</button>
+                <button id="abacadastrar">Criar conta</button>
+            </div>
+
+            <form id="painellogin" class="painelform active">
+                <label for="usuariologin" class="sr-only">Nome de usuário</label>
+                <input type="text" id="usuariologin" placeholder="Nome de usuário" required>
+                <label for="senhalogin" class="sr-only">Senha</label>
+                <input type="password" id="senhalogin" placeholder="Senha" required>
+                <p class="msgerro" id="errologin"></p>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <form id="painelcadastro" class="painelform">
+                <label for="usuariocadastro" class="sr-only">Nome de usuário</label>
+                <input type="text" id="usuariocadastro" placeholder="Escolha um nome de usuário" required>
+                <label for="senhacadastro" class="sr-only">Senha</label>
+                <input type="password" id="senhacadastro" placeholder="Crie uma senha" required>
+                <label for="senhacadastro2" class="sr-only">Confirme a senha</label>
+                <input type="password" id="senhacadastro2" placeholder="Confirme a senha" required>
+                <p class="msgerro" id="errocadastro"></p>
+                <button type="submit">Criar conta</button>
+            </form>
+        </div>
+
+        <!--Inicio sessao termos-->
+        <section class="sessoes termos">
+            <p>
+                Ao utilizar este site, você concorda com nossos 
+                <a href="termos.html">Termos de Uso</a> e 
+                <a href="privacidade.html">Política de Privacidade</a>.
+            </p>
+            <p>&copy;<span id="ano"></span> Raízes do Nordeste LTDA</p>
+        </section>
+        <!--Fim sessao termos-->
+    </main>
+    <!--Fim do conteudo principal-->
+
+    <!--Inicio do menu inferior-->
+    <nav class="menuinferior" aria-label="menu inferior">
+        <ul class="listainferior">
+            <li class="iteminferior">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Início</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="carrinho.html">
+                    <div class="iconecarrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="contadorcarrinho">0</span>
+                    </div>
+                    <p>Carrinho</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="pedidos.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <p>Pedidos</p>
+                </a>
+            </li>
+            <li class="iteminferior">
+                <a href="conta.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Conta</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fim do menu inferior-->
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

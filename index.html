@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadados SEO e compartilhamento -->
+    <meta name="description" content="Raízes do Nordeste - Rede de lanchonetes com autêntica comida nordestina. Faça seu pedido, acumule pontos e aproveite descontos.">
+    <meta name="keywords" content="comida nordestina, tapioca, acarajé, cuscuz, pedido online, fidelidade, lanchonete">
+    <meta name="author" content="Samuel Santos - Projeto Front-End UNINTER">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, WhatsApp, Telegram, LinkedIn) -->
+    <meta property="og:title" content="Raízes do Nordeste - Comida Nordestina">
+    <meta property="og:description" content="Cardápio digital, pedidos online e programa de fidelidade. O sabor do Nordeste ao seu alcance.">
+    <meta property="og:image" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste/midias/mobilePratoInicial.jpg">
+    <meta property="og:url" content="https://samuel-santos-ads-dev.github.io/projetoRaizesDoNordeste">
+    <meta property="og:type" content="website">
     <title>Raízes do Nordeste - Página Principal</title>
-    <link rel="stylesheet" href="estilos/mobilefirst.css">
+    <link rel="stylesheet" href="estilos/mobilefirst.css"><link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 1024px)">
     <link rel="shortcut icon" href="midias/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d9f9931f52.js" crossorigin="anonymous"></script>
 </head>
@@ -26,7 +39,7 @@
         <nav class="menudecima" aria-label="menu principal">
             <ul class="listadecima">
                 <li class="itemdecima">
-                    <a href="index.html">Ínicio</a>
+                    <a href="index.html">Inicio</a>
                 </li>
                 <li class="itemdecima">
                     <a href="paginas/cardapio.html">Cardápio</a>
@@ -77,32 +90,32 @@
         <!--Inicio sessao promocoes-->
         <section class="sessoes">
             <h2 class="titulomain" id="promocoes">Promoções</h2>
-            <section class="grid">
+            <section class="grid tabletpromocoesinicio">
                 <article class="card">
                     <img src="midias/tapioca.png" alt="Tapioca com carne">
                     <h3>Tapioca com carne</h3>
-                    <p>R$8,00</p>
+                    <p class="preco">R$ 8,00</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/mugunza.png" alt="Mungunza">
                     <h3>Mungunzá</h3>
-                    <p>R$5,00</p>
+                    <p class="preco">R$ 5,00</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/sucoacai.png" alt="Açai">
                     <h3>Açaí</h3>
-                    <p>R$4,50</p>
+                    <p class="preco">R$ 4,50</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/sucodeacerola.png" alt="Suco de acerola">
                     <h3>Suco de acerola</h3>
-                    <p>R$4,50</p>
+                    <p class="preco">R$ 4,50</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
             </section>
@@ -113,46 +126,46 @@
         <!--Inicio sessao cardapio-->
         <section class="sessoes">
             <h2 class="titulomain" id="cardapio">Cardápio</h2>
-            <section class="grid">
+            <section class="grid desktopcardapioinicio">
                 <article class="card">
                     <img src="midias/acarajerecheado.png" alt="Acarajé recheado">
-                    <h3>Acaraje recheado</h3>
-                    <p>R$12,00</p>
+                    <h3>Acarajé recheado</h3>
+                    <p class="preco">R$ 12,00</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/coxinhademacaxeira.png" alt="Coxinha de macaxeira">
                     <h3>Coxinha de macaxeira</h3>
-                    <p>R$7,50</p>
+                    <p class="preco">R$ 7,50</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/cuscuzcommanteiga.png" alt="Cuscuz com manteiga">
                     <h3>Cuscuz com manteiga</h3>
-                    <p>R$8,00</p>
+                    <p class="preco">R$ 8,00</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
-                    <img src="midias/enroladinhodesalcicha.png" alt="Enroladinho de salcicha">
-                    <h3>Enroladinho de salcicha</h3>
-                    <p>R$7,00</p>
+                    <img src="midias/enroladinhodesalcicha.png" alt="Enroladinho de salsicha">
+                    <h3>Enroladinho de salsicha</h3>
+                    <p class="preco">R$ 7,00</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/sucodegoiaba.png" alt="Suco de goiaba">
                     <h3>Suco de goiaba</h3>
-                    <p>R$6,50</p>
+                    <p class="preco">R$ 6,50</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
 
                 <article class="card">
                     <img src="midias/sucodegraviola.png" alt="Suco de graviola">
                     <h3>Suco de graviola</h3>
-                    <p>R$6,50</p>
+                    <p class="preco">R$ 6,50</p>
                     <button class="adicionarcarrinho">+</button>
                 </article>
             </section>
@@ -194,9 +207,9 @@
     <nav class="menuinferior" aria-label="menu inferior">
         <ul class="listainferior">
             <li class="iteminferior">
-                <a href="index.html" id="empaginainicial">
+                <a href="index.html" id="empagina">
                     <i class="fa-solid fa-house"></i>
-                    <p>Ínicio</p>
+                    <p>Inicio</p>
                 </a>
             </li>
             <li class="iteminferior">
